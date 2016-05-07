@@ -1,0 +1,19 @@
+package a;
+import java.util.ArrayList;
+
+public class Traseu {
+ArrayList<Partie> trasee;
+public void afisareTraseu() {
+	System.out.println(trasee);
+}
+
+public void addTraseu(Partie p) {
+	this.trasee.add(p);
+}
+
+public int getLengthTraseu() {
+	return trasee.size();
+}
+
+
+}

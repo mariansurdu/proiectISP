@@ -1,0 +1,15 @@
+package ex2ClassesSimpleTests;
+
+import static org.junit.Assert.*;
+import a.Persoana;
+
+import org.junit.Test;
+
+public class testPersoana {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

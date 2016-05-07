@@ -1,0 +1,15 @@
+
+public class Persoana {
+String Nume;
+String Prenume;
+String CNP;
+int varsta;
+
+public void afisareP() {
+System.out.println(Nume);
+System.out.println(Prenume);
+System.out.println(CNP);
+System.out.println(varsta);
+}
+}
+

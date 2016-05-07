@@ -1,0 +1,7 @@
+
+public class Transport {
+String tipTransport;
+public void transport(String t) {
+	//initializare transport
+}
+}

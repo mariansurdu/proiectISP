@@ -1,0 +1,20 @@
+
+public class main {
+
+	public static void main(String[] args) {
+	Persoana persoana=new Persoana("Andrei","Marian","134212212",21);
+	//PunctReferinta punct=new Punct(44,26,8);
+	String codTurist="1234567";
+	Boolean haveInstructor=true;
+	Boolean haveAccess=true;
+	Boolean facturaPlatita=true;
+	Transport t=new Transport("masina");
+	//Instructor e=new Instructor()
+	
+	Turist turist=new Turist(persoana,null,codTurist,haveInstructor,null,t,haveAccess,null,facturaPlatita,null); 
+	
+	}
+}
+	
+	
+	

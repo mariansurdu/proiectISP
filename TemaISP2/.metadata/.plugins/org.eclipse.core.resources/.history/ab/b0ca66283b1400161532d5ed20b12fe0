@@ -1,0 +1,18 @@
+
+public class Turist {
+Coordonate locatie;
+String codeT;
+Instructor Instructor;
+
+public void afisareTurist() {
+	//afisare turist
+}
+
+public void assignInstructor(Instructor p) {
+	//assign instructor
+}
+
+
+
+
+}

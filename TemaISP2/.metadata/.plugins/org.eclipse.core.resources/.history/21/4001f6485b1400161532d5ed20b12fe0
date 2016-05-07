@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class Traseu {
+ArrayList<Partie> trasee;
+public void afisareTraseu() {
+	System.out.println(trasee);
+}
+
+public void addTraseu(Partie p) {
+//add Traseu 	
+	this.trasee.add(p);
+}
+
+
+}

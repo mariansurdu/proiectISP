@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Turist {
+Persoana date; 
+PunctReferinta locatie;
+String codeT;
+Instructor Instructor;
+ArrayList<PunctReferinta> tablouPuncteReferinta;
+
+public void afisareTurist() {
+	//afisare turist
+	System.out.println(this.date);
+}
+
+public void assignInstructor(Instructor p) {
+	//assign instructor
+}
+
+
+
+
+}

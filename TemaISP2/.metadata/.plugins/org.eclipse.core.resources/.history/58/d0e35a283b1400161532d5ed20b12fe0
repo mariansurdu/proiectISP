@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class Coordonate {
+float cx;
+float cy;
+float alt;
+
+public void SetCoordonate(float x,float y,float z) {
+	this.cx=x;
+	this.cy=y;
+	this.alt=z;
+}
+
+
+public Coordonate getCoord(Coordonate p) {
+return p;	
+}
+
+
+public float distance(Turist p,ArrayList<Coordonate> z) {
+	return alt;
+	
+	//this must be distance algorithm
+
+}
+}
+
+
+

@@ -1,0 +1,12 @@
+
+public class Persoana {
+String Nume;
+String Prenume;
+String CNP;
+int varsta;
+
+public void afisareP() {
+
+}
+}
+

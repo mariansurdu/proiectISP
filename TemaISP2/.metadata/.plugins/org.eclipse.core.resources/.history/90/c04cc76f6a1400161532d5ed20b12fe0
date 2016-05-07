@@ -1,0 +1,15 @@
+package ex2ClassesSimpleTests;
+
+import static org.junit.Assert.*;
+
+
+import org.junit.Test;
+import a.Transport;
+public class testTransport {
+
+	@Test
+	public void test() {
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class main {
+
+	public static void main(String[] args) {
+	Persoana persoana=new Persoana("Andrei","Marian","134212212",21);	
+		
+	}
+
+}
