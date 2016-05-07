@@ -1,8 +1,15 @@
 package a;
+import static org.junit.Assert.assertEquals;
+
 import java.util.ArrayList;
 
 public class Traseu {
 ArrayList<Partie> trasee;
+
+public Traseu(ArrayList<Partie> list) {
+	this.trasee=list;
+}
+
 public void afisareTraseu() {
 	System.out.println(trasee);
 }
@@ -16,6 +23,7 @@ public void addTraseu(Partie p) {
 }
 
 public int getLengthTraseu() {
+	System.out.println(trasee.size());
 	return trasee.size();
 }
 
