@@ -13,6 +13,7 @@ Boolean haveAccess;
 Acces Access;
 ArrayList<Partie> Traseu;
 Boolean facturaPlatita;
+Traseu traseu;
 
 
 ArrayList<PunctReferinta> tablouPuncteReferinta;
@@ -30,7 +31,7 @@ public Turist(Persoana persoana, Object object, String codTurist, Boolean haveIn
 	this.haveAccess=haveAccess2;
 	if (this.haveAccess) {
 	//this.Access=access
-	this.Traseu=traseu;
+	
 	}
 	
 	this.facturaPlatita=facturaPlatita2;
@@ -43,6 +44,19 @@ public Turist(Persoana persoana, Object object, String codTurist, Boolean haveIn
 public Turist() {
 	// TODO Auto-generated constructor stub
 }
+
+public Turist(Persoana persoana, String string, a.Traseu traseu2) {
+	this.date=persoana;
+	this.codeT=string;
+	this.traseu=traseu2;
+}
+
+public Traseu getTraseu() {
+	System.out.println(this.traseu);
+	return this.traseu;
+}
+
+
 
 public void afisareTurist() {
 	//afisare turist
@@ -108,6 +122,13 @@ public void platireFactura(Factura f) {
 	else {
 		this.facturaPlatita=false;
 	}
+}
+
+
+
+public void setTraseu(Traseu altTraseu) {
+	this.traseu=altTraseu;
+	
 }
 
 

@@ -6,6 +6,14 @@ float cx;
 float cy;
 float alt;
 
+public PunctReferinta(float x,float y,float z) {
+	// TODO Auto-generated constructor stub
+	this.cx=x;
+	this.cy=y;
+	this.alt=z;
+}
+
+
 public void SetCoordonate(float x,float y,float z) {
 	this.cx=x;
 	this.cy=y;
