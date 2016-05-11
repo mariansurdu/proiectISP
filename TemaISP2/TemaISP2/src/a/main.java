@@ -10,10 +10,19 @@ public class main {
 	Boolean haveAccess=true;
 	Boolean facturaPlatita=true;
 	Transport t=new Transport("masina");
-	//Instructor e=new Instructor()
+	Turist tt=new Turist("Andrei","Marian","134212212",21,true,"123dsd",true,true);
+	Instructor p=new Instructor("Andrssssei","Marisssssan","134212212",21,"asdaw221",123);
+	tt.assignInstructor(p);
+	tt.assignTransport(t);
+	Acces a=new Acces("1221d",12,"sadasd2");
+	tt.addAccess(a);
+	Raport raport=new Raport();
+	raport.assignRaport(tt);
 	
-	Turist turist=new Turist(persoana,null,codTurist,haveInstructor,null,t,haveAccess,null,facturaPlatita,null); 
-	turist.afisareTurist();
+	tt.afisareTurist();
+	
+	
+	
 	}
 }
 	

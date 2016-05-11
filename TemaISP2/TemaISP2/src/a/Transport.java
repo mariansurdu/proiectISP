@@ -4,8 +4,7 @@ public class Transport {
 String tipTransport;
 
 public Transport(String string) {
-	// TODO Auto-generated constructor stub
-	this.tipTransport=string;
+		this.tipTransport=string;
 }
 
 public String getTransport() {

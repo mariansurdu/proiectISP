@@ -1,52 +1,36 @@
 package a;
 import java.util.ArrayList;
 
-public class Turist {
-Persoana date; 
+public class Turist extends Persoana {
+
 PunctReferinta locatie;
 String codeT;
+Boolean isActive;
 Boolean haveInstructor;
 Instructor Instructor;
-Partie Partie;
 Transport Transport;
 Boolean haveAccess;
 Acces Access;
 ArrayList<Partie> Traseu;
 Boolean facturaPlatita;
 Traseu traseu;
-
-
+Factura factura;
 ArrayList<PunctReferinta> tablouPuncteReferinta;
 
-public Turist(Persoana persoana, Object object, String codTurist, Boolean haveInstructor2, Object object2, Transport t,
-		Boolean haveAccess2, Object object3, Boolean facturaPlatita2,ArrayList<Partie> traseu) {
+public Turist(String Nume,String Prenume,String CNP,int varsta,Boolean isActive,String codeT,Boolean haveInstruct,Boolean haveAcces) {
 	
-	this.date=persoana;
+	super(Nume,Prenume,CNP,varsta);
 	//this.locatie=locatie;
-	this.codeT=codTurist;
-	this.haveInstructor=haveInstructor2;
-	if (haveInstructor2) {
-		//this.Instructor=instructor;
-	}
-	this.haveAccess=haveAccess2;
-	if (this.haveAccess) {
-	//this.Access=access
-	
-	}
-	
-	this.facturaPlatita=facturaPlatita2;
+	this.isActive=isActive;
+	this.codeT=codeT;
+	this.haveInstructor=haveInstruct;
+	this.haveAccess=haveAcces;
 
-	
 }
 
 
-
-public Turist() {
-	// TODO Auto-generated constructor stub
-}
-
-public Turist(Persoana persoana, String string, a.Traseu traseu2) {
-	this.date=persoana;
+public void Turist( String string, Traseu traseu2) {
+	
 	this.codeT=string;
 	this.traseu=traseu2;
 }
@@ -60,11 +44,23 @@ public Traseu getTraseu() {
 
 public void afisareTurist() {
 	//afisare turist
-	this.date.afisareP();
-	System.out.println(this.locatie); //locatie curenta
+	
+	System.out.println(this.Nume);
+	System.out.println(this.Prenume);
+	System.out.println(this.varsta);
+	System.out.println(this.CNP);
 	System.out.println(this.codeT); //code Turist
-	System.out.println(this.Instructor);
-	// pct referinta ??
+	if(this.haveInstructor) {
+		this.Instructor.afisareI();
+	}
+	else {
+		System.out.println("Not having instruct");
+	}
+	if (this.haveAccess){
+		this.Access.afisare();
+	}
+	
+	
 }
 
 public void assignInstructor(Instructor p) {
@@ -93,7 +89,6 @@ public double calculDistantaParcursa() {
 }
 
 public void assignPartie(Partie p) {
-	this.Partie=p;
 	this.Traseu.add(p); //adaugare partie in traseu
 }
 
@@ -101,6 +96,10 @@ public void assignTransport(Transport p) {
 	this.Transport=p;
 }
 
+
+public void addAccess(Acces a) {
+this.Access=a;	
+}
 
 public Boolean obtineAccess( Boolean b,Acces a ) {
 	this.haveAccess=b;
@@ -114,14 +113,20 @@ public Boolean obtineAccess( Boolean b,Acces a ) {
 	
 }
 
-public void platireFactura(Factura f) {
-	if (this.haveInstructor && !this.facturaPlatita) {
-		this.facturaPlatita=true;
-				
-	}
-	else {
-		this.facturaPlatita=false;
-	}
+public Boolean platireFactura() {
+	Boolean x=true;
+	if (this.haveInstructor) {
+		if (this.facturaPlatita) {
+		x=true;	
+		}
+		else {
+			x=false;
+		}
+		
+		}
+	return x;
+	
+	
 }
 
 

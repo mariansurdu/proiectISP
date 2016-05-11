@@ -1,0 +1,19 @@
+package a;
+
+public class Instructor extends Persoana {
+
+
+String code;
+int numarClienti;
+
+
+public Instructor(String nume, String prenume, String cnp, int varsta,String code,int numarClienti) {
+	super(nume, prenume, cnp, varsta);
+	this.code=code;
+	this.numarClienti=numarClienti;
+}
+
+public void emiteFactura(Turist p) {
+	//emitere factura pt turistul p 
+}
+}

@@ -1,0 +1,8 @@
+package a;
+
+public class Raport {
+public void emiteRaport() {
+	
+}
+
+}

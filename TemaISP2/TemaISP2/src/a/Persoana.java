@@ -4,7 +4,7 @@ public class Persoana {
 String Nume;
 String Prenume;
 String CNP;
-int varsta;
+ int varsta;
 
 public Persoana(String string, String string2, String string3, int i) {
 	this.Nume=string;
@@ -19,10 +19,10 @@ public int getVarsta() {
 }
 
 public void afisareP() {
-System.out.println(Nume);
-System.out.println(Prenume);
-System.out.println(CNP);
-System.out.println(varsta);
+System.out.println("Nume:"+Nume);
+System.out.println("Prenume:"+Prenume);
+System.out.println("CNP:"+CNP);
+System.out.println("Varsta:"+varsta);
 }
 }
 

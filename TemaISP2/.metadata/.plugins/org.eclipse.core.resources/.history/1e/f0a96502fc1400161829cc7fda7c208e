@@ -1,0 +1,45 @@
+package ex2ClassesSimpleTests;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import a.Turist;
+import a.Traseu;
+import a.Persoana;
+import a.PunctReferinta;
+import a.Partie;
+
+
+import org.junit.Test;
+
+public class testRelatieAsociatieTuristTraseuSM {
+	Turist turist;
+	Traseu traseu;
+	Persoana persoana;
+	
+	protected void setUp() throws Exception{
+		persoana=new Persoana("ion","ionel","22323",22);
+		turist=new Turist(persoana,"12344");
+		String dificultate="Medie";
+		PunctReferinta pctInc=new PunctReferinta(2,3,4);
+		PunctReferinta pctSfarsit=new PunctReferinta(2,3,5);
+		Partie p=new Partie(dificultate,pctInc,pctSfarsit);
+		ArrayList<Partie> list = new ArrayList<Partie>();
+		list.add(p);
+		traseu=new Traseu(list);
+	}
+	
+	protected void tearDown() throws Exception {
+		turist=null;
+		traseu=null;
+	}
+
+	@Test
+	public void test() {
+	
+		
+		
+	}
+
+}

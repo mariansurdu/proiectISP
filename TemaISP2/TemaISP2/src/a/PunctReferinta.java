@@ -26,12 +26,17 @@ return p;
 }
 
 
-public float distance(Turist p,ArrayList<PunctReferinta> z) {
-	return alt;
+public Boolean estePePartie(Turist p,Partie x){
+	if (p.locatie.cx>x.pctInceput.cx && p.locatie.cy>x.pctInceput.cy && p.locatie.cx<x.pctSfarsit.cx && p.locatie.cy<x.pctSfarsit.cy) {
+		return true;
+	}
+	else {
+		return false;
+	}
 	
-	//this must be distance algorithm
-
 }
+
+
 }
 
 

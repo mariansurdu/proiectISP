@@ -1,0 +1,15 @@
+package a;
+
+public class Instructor {
+String code;
+int numarClienti;
+Persoana dateInstructor;
+
+public void assignClient(Turist p) {
+	//assign client data
+}
+
+public void emiteFactura(Turist p) {
+	//emitere factura pt turistul p 
+}
+}

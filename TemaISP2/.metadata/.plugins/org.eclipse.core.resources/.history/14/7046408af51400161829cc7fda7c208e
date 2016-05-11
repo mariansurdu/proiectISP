@@ -1,0 +1,18 @@
+package ex2ClassesSimpleTests;
+
+import static org.junit.Assert.*;
+import a.Turist;
+import a.Traseu;
+
+import org.junit.Test;
+
+public class testRelatieAsociatieTuristTraseuSM {
+
+	@Test
+	public void test() {
+		//fail("Not yet implemented");
+		
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package a;
+import java.util.ArrayList;
+
+public class Statiune {
+String nume;
+ArrayList<Partie> partii;
+public void afisare() {
+
+}
+
+public void Statiune(String nume,ArrayList<Partie> p) {
+	this.nume=nume;
+	this.partii=p;
+}
+
+}

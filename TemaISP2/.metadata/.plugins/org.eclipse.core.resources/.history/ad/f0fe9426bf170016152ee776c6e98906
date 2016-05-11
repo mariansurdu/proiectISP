@@ -1,0 +1,22 @@
+package a;
+
+public class Acces {
+String codCartela;
+int pret;
+String codTurist;
+
+	public void setAcces(Turist p) {
+			if (codCartela!=null){
+				p.haveAccess=true;
+				
+			}
+			else {
+				p.haveAccess=false;
+			}
+		}
+
+
+		public void deleteAccess(Turist p) {
+				p.haveAccess=false;
+		}
+}

@@ -1,0 +1,16 @@
+package a;
+import java.util.ArrayList;
+
+public class EvidentaTuristi {
+ArrayList<Turist> TuristiActivi;
+ArrayList<Turist> TuristiInactivi;
+
+public void addTurist(Turist p) {
+	//adaugare turist in lista 
+}
+
+
+public void deleteTurist(Turist p) {
+	//stergere turist
+}
+}

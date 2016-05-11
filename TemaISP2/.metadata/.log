@@ -1077,3 +1077,585 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/TemaISP2/src/T
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 !SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-07 18:16:09.495
 !MESSAGE Resource '/TemaISP2/src/Turist.java' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-07 21:12:17.727
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex2ClassesSimpleTests;
+//verifica daca user-ul a parcurs vreun traseu(numar de partii sa fie mai mare ca 0);
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import a.Traseu;
+public class testTraseu {
+
+	@Test
+	public void test() {
+		//need to implement partie!
+		//Traseu t=new Traseu();
+		Traseu t=new Traseu([]);
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:270)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:202)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2016-05-07 21:12:17.751
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:270)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:202)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2016-05-07 21:12:17.757
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:270)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:202)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-07 21:12:17.818
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex2ClassesSimpleTests;
+//verifica daca user-ul a parcurs vreun traseu(numar de partii sa fie mai mare ca 0);
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import a.Traseu;
+public class testTraseu {
+
+	@Test
+	public void test() {
+		//need to implement partie!
+		//Traseu t=new Traseu();
+		Traseu t=new Traseu([]);
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:461)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2016-05-07 21:12:17.825
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:461)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2016-05-07 21:12:17.842
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:461)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-07 21:12:29.209
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex2ClassesSimpleTests;
+//verifica daca user-ul a parcurs vreun traseu(numar de partii sa fie mai mare ca 0);
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import a.Traseu;
+public class testTraseu {
+
+	@Test
+	public void test() {
+		//need to implement partie!
+		//Traseu t=new Traseu();
+		Traseu t=new Traseu([]);
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:161)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2016-05-07 21:12:29.216
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:161)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2016-05-07 21:12:29.224
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:161)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-07 21:12:32.628
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex2ClassesSimpleTests;
+//verifica daca user-ul a parcurs vreun traseu(numar de partii sa fie mai mare ca 0);
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import a.Traseu;
+public class testTraseu {
+
+	@Test
+	public void test() {
+		//need to implement partie!
+		//Traseu t=new Traseu();
+		Traseu t=new Traseu([]);
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2016-05-07 21:12:32.632
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2016-05-07 21:12:32.705
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:2845)
+	at org.eclipse.jdt.core.dom.ASTConverter.setTypeAnnotationsAndSourceRangeOnArray(ASTConverter.java:3420)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToArray(ASTConverter.java:3166)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertType(ASTConverter.java:3628)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1326)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1717)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:732)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1699)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationFragment(ASTConverter.java:3364)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToVariableDeclarationStatement(ASTConverter.java:3432)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleLocalDeclaration(ASTConverter.java:458)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:633)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:195)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2958)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1374)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:295)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1216)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:535)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:528)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:471)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2016-05-07 21:17:13.465
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.annotateType(ImportRewrite.java:1307)
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.internalAddImport(ImportRewrite.java:1411)
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.addImport(ImportRewrite.java:855)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.ChangeMethodSignatureProposal.modifyParameters(ChangeMethodSignatureProposal.java:213)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.ChangeMethodSignatureProposal.getRewrite(ChangeMethodSignatureProposal.java:131)
+	at org.eclipse.jdt.ui.text.java.correction.ASTRewriteCorrectionProposal.addEdits(ASTRewriteCorrectionProposal.java:113)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.createTextChange(CUCorrectionProposal.java:234)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.createChange(CUCorrectionProposal.java:244)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:377)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.getTextChange(CUCorrectionProposal.java:254)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.getAdditionalProposalInfo(CUCorrectionProposal.java:141)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-05-08 11:00:20.174 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_74
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-08 11:01:01.720
+!MESSAGE       0 [main] us 0 init_cheap: VirtualAlloc pointer is null, Win32 error 487
+AllocationBase 0x0, BaseAddress 0x68570000, RegionSize 0x60000, State 0x10000
+C:\Program Files (x86)\git\bin\sh.exe: *** Couldn't reserve space for cygwin's heap, Win32 error 0
+error: There was a problem with the editor 'echo'.
+
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-08 11:01:55.082
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Maryan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-05-11 22:07:48.629 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_74
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-11 22:08:24.730
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Maryan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.rcp 2 23 2016-05-12 01:57:56.802
+!MESSAGE Failed to parse news feed
+!STACK 0
+java.net.UnknownHostException: www.codetrails.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getRSSFeed(CheckForProjectNewsJob.java:138)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

@@ -1,15 +1,31 @@
 package a;
 
-public class Instructor {
+public class Instructor extends Persoana {
+
+
 String code;
 int numarClienti;
-Persoana dateInstructor;
 
-public void assignClient(Turist p) {
-	//assign client data
+public Instructor(String nume, String prenume, String cnp, int varsta,String code,int numarClienti) {
+	super(nume, prenume, cnp, varsta);
+	this.code=code;
+	this.numarClienti=numarClienti;
+}
+public void afisareI() {
+	System.out.println(Nume);
+	System.out.println(Prenume);
+	System.out.println(CNP);
+	System.out.println(varsta);
+	System.out.println(code);
+	System.out.println(code);
+	System.out.println(numarClienti);
 }
 
-public void emiteFactura(Turist p) {
-	//emitere factura pt turistul p 
+
+public void emiteFactura(Factura f) {
+	System.out.println("Factura emisa:");
+	System.out.println(f.codFactura);
+	System.out.println(f.codClient);
+	
 }
 }
