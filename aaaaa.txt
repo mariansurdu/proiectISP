@@ -1,0 +1,9 @@
+/*Marian: Turist, Transport, Persoana, Traseu
+Andrei: PctReferinta, Partie, Factura, Access
+Nadina: Statiune, Raport, Instructor, EvidentaTurist 
+
+
+ Asociatie: obiectul e creat in exteriorul clasei, gen Client - Comanda
+ Agregare: has a, tip Sistem - Componenta
+ Compozitie : obiectul e creat in interiorul clasei (Traseu - Partie)
+*/

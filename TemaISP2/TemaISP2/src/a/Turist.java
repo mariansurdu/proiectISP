@@ -28,6 +28,16 @@ public Turist(String Nume,String Prenume,String CNP,int varsta,Boolean isActive,
 
 }
 
+public Turist(Persoana Pers,Boolean isActive,String codeT,Boolean haveInstruct,Boolean haveAcces) {
+	super(Pers.Nume, Pers.Prenume, Pers.CNP, Pers.varsta);
+	this.isActive=isActive;
+	this.codeT=codeT;
+	this.haveInstructor=haveInstruct;
+	this.haveAccess=haveAcces;
+}
+
+
+
 
 public void Turist( String string, Traseu traseu2) {
 	
@@ -44,7 +54,7 @@ public Traseu getTraseu() {
 
 public void afisareTurist() {
 	//afisare turist
-	
+	System.out.println("\nTurist:");
 	System.out.println(this.Nume);
 	System.out.println(this.Prenume);
 	System.out.println(this.varsta);
@@ -59,8 +69,6 @@ public void afisareTurist() {
 	if (this.haveAccess){
 		this.Access.afisare();
 	}
-	
-	
 }
 
 public void assignInstructor(Instructor p) {
@@ -70,11 +78,21 @@ public void assignInstructor(Instructor p) {
 public void addPunctReferinta(PunctReferinta p) {
 	this.tablouPuncteReferinta.add(p);
 }
+public static double round(double value, int places) {
+    if (places < 0) throw new IllegalArgumentException();
+
+    long factor = (long) Math.pow(10, places);
+    value = value * factor;
+    long tmp = Math.round(value);
+    return (double) tmp / factor;
+}
 
 public double calculDistantaParcursa() {
 	 final int R = 6371; // Radius of the earth
 	 double  distance=0d;
-	 for (int i=0;i<tablouPuncteReferinta.size();i++) {
+	 double  distanceToReturn=0d;
+	 
+	 for (int i=0;i<tablouPuncteReferinta.size()-1;i++) {
 		 Double latDistance = Math.toRadians(tablouPuncteReferinta.get(i+1).cx - tablouPuncteReferinta.get(i).cx);
 		 Double lonDistance = Math.toRadians(tablouPuncteReferinta.get(i+1).cy - tablouPuncteReferinta.get(i).cy);
 		 Double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
@@ -84,8 +102,10 @@ public double calculDistantaParcursa() {
 		   distance = R * c * 1000; // convert to meters
 		  double height = tablouPuncteReferinta.get(i+1).alt-tablouPuncteReferinta.get(i).alt;
 		  distance = Math.pow(distance, 2) + Math.pow(height, 2);
+		  distanceToReturn=distanceToReturn+distance;
+		  
 	 }
-	 	return (Math.sqrt(distance));
+	 	return round((Math.sqrt(distanceToReturn)),2);
 }
 
 public void assignPartie(Partie p) {
@@ -134,6 +154,10 @@ public Boolean platireFactura() {
 public void setTraseu(Traseu altTraseu) {
 	this.traseu=altTraseu;
 	
+}
+
+public void setTablouPuncteReferinta(ArrayList<PunctReferinta> a) {
+	this.tablouPuncteReferinta=a;
 }
 
 
