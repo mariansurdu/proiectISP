@@ -14,8 +14,7 @@ public class testTurist {
 		Turist t=new Turist("ANdrei","Marian","2132ddd",23,true,"2342dd",true,true);
 		Boolean x=t.obtineAccess(true,null);
 		assertEquals(true,x);
-		
-		
+	
 	}
 
 }

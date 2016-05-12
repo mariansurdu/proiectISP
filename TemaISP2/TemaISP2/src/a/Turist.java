@@ -39,11 +39,15 @@ public Turist(Persoana Pers,Boolean isActive,String codeT,Boolean haveInstruct,B
 
 
 
+
+
 public void Turist( String string, Traseu traseu2) {
 	
 	this.codeT=string;
 	this.traseu=traseu2;
 }
+
+
 
 public Traseu getTraseu() {
 	System.out.println(this.traseu);
@@ -53,7 +57,6 @@ public Traseu getTraseu() {
 
 
 public void afisareTurist() {
-	//afisare turist
 	System.out.println("\nTurist:");
 	System.out.println(this.Nume);
 	System.out.println(this.Prenume);
@@ -108,9 +111,7 @@ public double calculDistantaParcursa() {
 	 	return round((Math.sqrt(distanceToReturn)),2);
 }
 
-public void assignPartie(Partie p) {
-	this.Traseu.add(p); //adaugare partie in traseu
-}
+
 
 public void assignTransport(Transport p) {
 	this.Transport=p;
@@ -132,6 +133,8 @@ public Boolean obtineAccess( Boolean b,Acces a ) {
 	return b;
 	
 }
+
+
 
 public Boolean platireFactura() {
 	Boolean x=true;
@@ -158,6 +161,10 @@ public void setTraseu(Traseu altTraseu) {
 
 public void setTablouPuncteReferinta(ArrayList<PunctReferinta> a) {
 	this.tablouPuncteReferinta=a;
+}
+
+public ArrayList<PunctReferinta> getTablouPct() {
+	return this.tablouPuncteReferinta;
 }
 
 

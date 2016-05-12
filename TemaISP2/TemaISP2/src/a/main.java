@@ -20,7 +20,7 @@ public class main {
 	Transport t=new Transport("Telescaun");
 	Transport t1=new Transport("Teleski");
 	
-	Turist tt=new Turist("Surdu","Marian","1940203146252",22,true,codCartela,true,true);
+	Turist tt=new Turist("Surdu","Marian","1940203146252",22,true,"codCartela",true,true);
 	Turist tt1=new Turist(persoana,true,"client002",true,true);
 	
 	Instructor p=new Instructor("Ski","Instructor","1890404125151",27,"instr001",5);
