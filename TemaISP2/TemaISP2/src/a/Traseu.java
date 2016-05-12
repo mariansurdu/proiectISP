@@ -4,27 +4,30 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 
 public class Traseu {
-ArrayList<Partie> trasee;
+ArrayList<Partie> traseu;
 
-public Traseu(ArrayList<Partie> list) {
-	this.trasee=list;
+public Traseu(ArrayList<Partie> traseu) {
+	this.traseu=traseu;
 }
 
 public void afisareTraseu() {
-	System.out.println(trasee);
+	for (Partie p:traseu) {
+		
+		p.afisare();
+	}
 }
 
-public void Traseu(ArrayList<Partie> t) {
-	this.trasee=t;
+public void Traseu(ArrayList<Partie> traseu) {
+	this.traseu=traseu;
 }
 
 public void addTraseu(Partie p) {
-	this.trasee.add(p);
+	this.traseu.add(p);
 }
 
 public int getLengthTraseu() {
-	System.out.println(trasee.size());
-	return trasee.size();
+	System.out.println(traseu.size());
+	return traseu.size();
 }
 
 

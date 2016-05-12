@@ -1,0 +1,10 @@
+package a;
+
+public class Partie {
+String dificultate;
+PunctReferinta pctInceput;
+PunctReferinta pctSfarsit;
+public void assignPartie(Turist p) {
+	//partie pt turist p
+}
+}

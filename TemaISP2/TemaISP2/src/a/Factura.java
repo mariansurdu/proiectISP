@@ -3,12 +3,11 @@ package a;
 public class Factura {
 String codFactura;
 String codClient;
-Turist dateClient;
-Instructor instructor;
 
-public Factura factura (String c,String b,Turist data,Instructor i) {
-	return null;
-	// return date factura
+
+public Factura(String c,String b) {
+	this.codFactura=c;
+	this.codClient=b;
 	
 }
 }

@@ -1,0 +1,18 @@
+package ex2ClassesSimpleTests;
+//verifica daca user-ul a parcurs vreun traseu(numar de partii sa fie mai mare ca 0);
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import a.Traseu;
+public class testTraseu {
+
+	@Test
+	public void test() {
+		//need to implement partie!
+		//Traseu t=new Traseu();
+		String dificultate="Medie";
+		PunctReferinta pct=new PunctReferinta(null);
+		Traseu t=new Traseu();
+	}
+
+}

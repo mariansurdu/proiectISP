@@ -9,7 +9,13 @@ public Partie(String dificultate2, PunctReferinta pctInc, PunctReferinta pctSfar
 	this.pctInceput=pctInc;
 	this.pctSfarsit=pctSfarsit2;
 }
-public void assignPartie(Turist p) {
-	//partie pt turist p
+
+public void afisare() {
+	System.out.println("Dificultate:"+dificultate);
+	System.out.println("Coordonate Partie:");
+	System.out.println("Punct Inceput:"+pctInceput);
+	System.out.println("Punct Sfarsit:"+pctSfarsit);
+	
+	
 }
 }

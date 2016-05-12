@@ -1,0 +1,26 @@
+package a;
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+
+public class Traseu {
+ArrayList<Partie> trasee;
+public void afisareTraseu() {
+	System.out.println(trasee);
+}
+
+public void Traseu(ArrayList<Partie> t) {
+	this.trasee=t;
+}
+
+public void addTraseu(Partie p) {
+	this.trasee.add(p);
+}
+
+public int getLengthTraseu() {
+	System.out.println(trasee.size());
+	return trasee.size();
+}
+
+
+}
