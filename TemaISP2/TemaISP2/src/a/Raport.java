@@ -22,7 +22,8 @@ void salveazaIstoric(){
     try {  
 
         // This block configure the logger with handler and formatter  
-        fh = new FileHandler("C:/Users/Maryan/Desktop/TemaISP2/TemaISP2/src/Raport.log");  
+      //fh = new FileHandler("C:/Users/Maryan/Desktop/TemaISP2/TemaISP2/src/Raport.log");  
+    	fh = new FileHandler("C:/Users/Andrei Ulinici/Documents/GitHub/proiectISP/TemaISP2/TemaISP2/src/Raport1.log");
         logger.addHandler(fh);
         SimpleFormatter formatter = new SimpleFormatter();  
         fh.setFormatter(formatter);  
@@ -39,6 +40,7 @@ void salveazaIstoric(){
         	logger.info("Access data:"+t.Access);
         }
         logger.info("Traseu turist:"+t.Traseu);
+        logger.info("Traseu turist:");
         logger.info("Transport:"+t.Transport);
         
 

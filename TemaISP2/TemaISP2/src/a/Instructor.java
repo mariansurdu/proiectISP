@@ -17,7 +17,6 @@ public void afisareI() {
 	System.out.println(CNP);
 	System.out.println(varsta);
 	System.out.println(code);
-	System.out.println(code);
 	System.out.println(numarClienti);
 }
 

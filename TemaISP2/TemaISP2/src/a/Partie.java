@@ -4,10 +4,10 @@ public class Partie {
 String dificultate;
 PunctReferinta pctInceput;
 PunctReferinta pctSfarsit;
-public Partie(String dificultate2, PunctReferinta pctInc, PunctReferinta pctSfarsit2) {
-	this.dificultate=dificultate2;
+public Partie(String dificultate, PunctReferinta pctInc, PunctReferinta pctSfarsit) {
+	this.dificultate=dificultate;
 	this.pctInceput=pctInc;
-	this.pctSfarsit=pctSfarsit2;
+	this.pctSfarsit=pctSfarsit;
 }
 
 public void afisare() {
